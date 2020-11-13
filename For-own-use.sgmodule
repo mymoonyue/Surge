@@ -53,4 +53,4 @@ themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercont
 #抖音去广告&水印res = type=http-response,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
 
 [MITM]
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, ios.prod.ftl.netflix.com, api.m.jd.com, trade-acs.m.taobao.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, vip1.kuwo.cn, *.amemv.com
+hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, ios.prod.ftl.netflix.com, api.m.jd.com, trade-acs.m.taobao.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, *.kuwo.cn, vip1.kuwo.cn, *.amemv.com
