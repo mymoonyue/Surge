@@ -1,5 +1,5 @@
 #!name=AAF 自用Script合集。For 一条小团团
-#!desc=该模块为脚本合集,用于Remove Ads + unlock vip.修改自nzw9314,测试阶段,可能会频道更新.脚本全部来自网络.一些脚本独立于 https://raw.githubusercontent.com/mymoonyue/Surge/master/For-own-use.sgmodule 可搭配使用.
+#!desc=该模块为脚本合集,修改自nzw9314,测试阶段.脚本全部来自网络.一些脚本独立于 https://raw.githubusercontent.com/mymoonyue/Surge/master/For-own-use.sgmodule 可搭配使用.
 #!system=ios
 
 [General]
@@ -29,6 +29,7 @@ https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=613
 
 [Script]
 
+# NobyDa整理
 # > 人人视频 去广告
 rrsp_video = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/watch\/v\d\/get_movie_info,script-path=https://Choler.github.io/Surge/Script/rrsp.js
 rrsp_banner = type=http-response,requires-body=true,pattern=^https?:\/\/api\.rr\.tv\/v\dplus\/index\/channel$,script-path=https://Choler.github.io/Surge/Script/rrsp.js
