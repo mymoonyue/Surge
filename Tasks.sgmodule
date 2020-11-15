@@ -49,8 +49,8 @@ cron "0 11 8 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts
 cron "0 11 8 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js, tag=微博&钱包
 
 # lowking   https://github.com/lowking/Scripts
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js, tag=qq会员成长值
-cron "0 0 0,2 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQPet/lkQQPet.js, tag=QQ萌宠
+#cron "5 0 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js, tag=qq会员成长值
+#cron "0 0 0,2 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/QQPet/lkQQPet.js, tag=QQ萌宠
 
 # dompling   https://github.com/dompling/Script
 cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/dompling/Script/master/oneSay/oneSay.js, tag=每日一言
