@@ -3,7 +3,7 @@
 
 [Script]
 
-cron "0 */5 3-7 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, tag=中青看点极速版
+cron "2 */5 3-9 * * *" script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js, tag=中青看点极速版
 
 # By Evilbutcher GitHub：https://github.com/evilbutcher/Quantumult_X/tree/master
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js, tag=NASA每日一图
