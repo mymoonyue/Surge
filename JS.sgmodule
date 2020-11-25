@@ -302,7 +302,7 @@ http-response ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getDownloadSongInfo\?
 http-response ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getSongInfo\?data requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/zingmp3.getsong.js,tag=zingmp3
 
 # > Choler 
-http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/WeChat.js, tag=WeChat
+# http-request ^https://mp\.weixin\.qq\.com/mp/getappmsgad script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/WeChat.js, tag=WeChat
 http-response ^https://r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList) requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/QQNews.js, tag=QQNews
 
 # > 公众号墨鱼手记    https://github.com/ddgksf2013
