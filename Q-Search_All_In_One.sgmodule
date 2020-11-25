@@ -16,7 +16,7 @@
 # sof:  Stack Overflow
 # se:   StackExchange
 # wiki: 维基百科
-# wk:   维基中文)
+# wk:   维基中文
 # mg:   Magi
 # tf:   Google 搜索 TestFlight
 
@@ -24,7 +24,6 @@
 # trc: Google 译至中
 # tre: Google 译至英
 # trj: Google 译至日
-
 
 # db：豆瓣搜索
 # zh: 知乎
@@ -44,9 +43,11 @@
 # bli: 哔哩哔哩
 # ytb: YouTube
 # ph:  PornHub 
+
 # gd:  Google Drive资源
 # tgd: TG搜索Google Drive资源
- 
+# zgd: zhao GoogleDrive
+
 # bi: 必应
 # bd：百度搜索
 # ddg：DuckDuckGo 搜索
@@ -54,8 +55,12 @@
 
 [URL Rewrite]
 
+
+# ＞搜索
+
 #gm   (Google图片)
 ^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
+
 # gh   (GitHub)
 ^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ https://github.com/search?q=$1 302
 
@@ -80,7 +85,9 @@
 # tf  (Google 搜索 TestFlight)
 ^https:\/\/duckduckgo.com\/\?q=tf(\+|%20)([^&]+).+ https://www.google.com/search?as_q=$2&as_sitesearch=testflight.apple.com 302
 
+
 # > 翻译
+
 # yd   (有道)
 ^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+ http://dict.youdao.com/search?q=$1 302
 
@@ -94,7 +101,7 @@
 ^https:\/\/duckduckgo.com\/\?q=trj\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1 302
 
 
-# 社区
+# ＞社区
 
 # db：豆瓣
 ^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search/?query=$1 302
@@ -120,7 +127,9 @@
 # csdn: CSDN
 ^https:\/\/duckduckgo.com\/\?q=csdn\+([^&]+).+ https://so.csdn.net/so/search/s.do?q=$1&t=&u= 302
 
+
 # > 购物
+
 # zdm: 什么值得买
 ^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ https://search.m.smzdm.com/?v=b&s=$1 302
 
@@ -136,7 +145,8 @@
 # tm: 天猫
 ^https:\/\/duckduckgo.com\/\?q=tm\+([^&]+).+ https://s.m.tmall.com/m/search.htm?q=$1 302
 
-# 视频资源
+
+# ＞视频资源
 
 # ac (Acfun)
 ^https:\/\/duckduckgo.com\/\?q=ac\+([^&]+).+ https://www.acfun.cn/search?keyword==$1 302
@@ -150,15 +160,21 @@
 # ph  (PornHub) 
 ^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+ https://cn.pornhub.com/video/search?search=$1 302
 
+
+# ＞网盘
+
 # gd  (Google Drive)
 ^https:\/\/duckduckgo.com\/\?q=gd\+([^&]+).+ https://www.google.com/search?q=%22Google+Drive%22+$1 302
 
 # tgd  (t.me/gdurl 搜索 Google Drive 资源)
 ^https:\/\/duckduckgo.com\/\?q=tgd\+([^&]+).+ https://t.me/s/gdurl?q=$1 302
 
+# zgd  (https://zhao.pp.ua 搜索 Google Drive 资源)
+^https:\/\/duckduckgo.com\/\?q=zgd(\+|%20)([^&]+).+ https://zhao.pp.ua/?q=$2 302
 
 
-# 默认搜索
+# ＞默认搜索
+
 # bi: 必应
 ^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ https://cn.bing.com/search?q=$1 302
 
