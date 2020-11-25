@@ -9,6 +9,7 @@
 
 ### 固定任务
 
+京东赚赚 = type=cron,cronexp=0 9 * * *,timeout=60,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
 京东抽奖机 = type=cron,cronexp="11 1 * * *", script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js,timeout=300
 东东工厂 = type=cron,cronexp="0 */3 * * *", script-path=https://raw.githubusercontent.com/799953468/Quantumult-X/master/Scripts/JD/jd_factory.js,timeout=300
 京东小窝 = type=cron,cronexp="0 9 * * *", script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/ddxw.js,timeout=300
