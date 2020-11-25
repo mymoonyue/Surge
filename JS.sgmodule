@@ -1,4 +1,4 @@
-#!name=AAF 自用Script合集。For 一条小团团
+#!name=AAF 自用脚本合集 For 一条小团团
 #!desc=该模块为脚本合集,脚本全部来自网络.一些脚本独立于 https://raw.githubusercontent.com/mymoonyue/Surge/master/For-own-use.sgmodule 可搭配使用.
 #!system=ios
 
@@ -21,14 +21,13 @@ URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/pay/ok$ ,REJECT-TINYGIF
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ver/index_ios$,REJECT
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ads/index,REJECT-TINYGIF
 
-
 [Header Rewrite]
 
 # > 小小影视vip (By Eric)
 https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=6131333537653261363463323331666265663763396239663835636662373930
 
+
 [Script]
-小小影视 = type=http-response,pattern=https:\/\/.*\/getGlobalData,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/xxysad.js,script-update-interval=0
 
 # > NobyDa整理
 # > 人人视频 去广告
