@@ -6,6 +6,7 @@
 
 ### 临时任务
 
+排行榜 = type=cron,cronexp="0 13 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js
 
 ### 固定任务
 
@@ -19,10 +20,11 @@
 # By lxk0301   GitHub：https://github.com/lxk0301/scripts
 东东农场 = type=cron,cronexp="5 6-18/6 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_fruit.js,timeout=300
 东东萌宠 = type=cron,cronexp="10 7-19/6 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pet.js,timeout=300
-京东种豆得豆 = type=cron,cronexp="1 7-21/2 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js,timeout=300
+京东种豆得豆 = type=cron,cronexp="6 0,22,7-21/2 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js,timeout=300
 宠汪汪 = type=cron,cronexp="15 */2 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy.js,timeout=300
 宠汪汪喂食 = type=cron,cronexp="12 */1 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_feedPets.js,timeout=300
 宠汪汪偷好友积分与狗粮 = type=cron,cronexp="0 0,6 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_steal.js,timeout=300
+宠汪汪聚宝盆辅助 = type=http-response, pattern=^https:\/\/jdjoy\.jd\.com\/pet\/getPetTreasureBox|^https:\/\/draw\.jdfcloud\.com\/\/pet\/getPetTreasureBox, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_petTreasureBox.js
 宠汪汪积分兑换奖品 = type=cron,cronexp="1 0,8,12,16 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_reward.js,timeout=300
 京东天天加速 = type=cron,cronexp="8 */3 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_speed.js,timeout=300
 京东摇钱树 = type=cron,cronexp="3 */3 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_moneyTree.js,timeout=300
@@ -41,6 +43,7 @@
 京东点点券 = type=cron,cronexp="10 0,20 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_necklace.js,wake-system=1,timeout=300
 京喜工厂 = type=cron,cronexp="10 * * * *",wake-system=1,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js,timeout=300
 东东工厂 = type=cron,cronexp="10 * * * *",wake-system=1,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js,timeout=300
+天天加速 = type=cron, cronexp="0 5 1-23/2 * * *", wake-system=1, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_speed.js, timeout=600
 
 # By NobyDa    GitHub：https://github.com/NobyDa/Script/tree/master
 京东签到 = type=cron,cronexp="1 0 * * *",script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,timeout=300
