@@ -67,7 +67,7 @@ TestFlight公测监控 = type=cron,cronexp="40 9 1-23/2 * * *", script-path=http
 每日一句+蚂蚁森林收能量 = type=cron,cronexp="11 7 * * *", script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/yichahucha/cron_daily.js,timeout=300
 
 # Tartarus    https://github.com/Tartarus2014/Script
-滴滴出行 = type=cron,cronexp="3 0 * * *", script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/DiDi.js,timeout=300
+滴滴出行 = type=cron,cronexp="3 0,19 * * *", script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js,timeout=300
 
 # makexp
 微信小程序-喜马拉雅 = type=cron,cronexp="40 11 8 * * *", script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/xmly_wc.js,timeout=300
