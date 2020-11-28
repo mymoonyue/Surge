@@ -1,5 +1,5 @@
 #!name=AAD 自用脚本
-#!desc=微博去广告、奈飞评分、京东淘宝比价、BiliBili、酷我vip、抖音去广告&水印、EmbyUnlocked、彩云天气、wx2tb For一条小团团
+#!desc=微博去广告、奈飞评分、京东淘宝比价、BiliBili、酷我vip、抖音去广告&水印、EmbyUnlocked、彩云天气、微信链接跳转 For一条小团团
 #!system=ios
 
 [Rule]
@@ -60,7 +60,7 @@ emby-adr-gS.js = type=http-response,requires-body=1,max-size=0,pattern=^https://
 # 彩云天气自动更新位置
 type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
 
-# 微信中的淘宝链接&支付宝二维码跳转
+# 微信打不开的链接会进行跳转，包括抖音淘宝链接甚至可扫描支付宝二维码
 tbopener.js = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
 
 [MITM]
