@@ -41,9 +41,11 @@
 京豆变动通知 = type=cron,cronexp="2 9 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_change.js,timeout=300
 京东全民开红包 = type=cron,cronexp="1 1 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_redPacket.js,wake-system=1,timeout=300
 京东点点券 = type=cron,cronexp="10 0,20 * * *", script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_necklace.js,wake-system=1,timeout=300
-京喜工厂 = type=cron,cronexp="10 * * * *",wake-system=1,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js,timeout=300
+京喜工厂 = type=cron,cronexp="10 * * * *",wake-system=1,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_factory.js,timeout=300
+# https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_dreamFactory.js
 东东工厂 = type=cron,cronexp="10 * * * *",wake-system=1,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js,timeout=300
 天天加速 = type=cron, cronexp="0 5 1-23/2 * * *", wake-system=1, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_speed.js, timeout=600
+十元街 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js
 
 # By NobyDa    GitHub：https://github.com/NobyDa/Script/tree/master
 京东签到 = type=cron,cronexp="1 0 * * *",script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,timeout=300
