@@ -5,6 +5,17 @@
 
 中青看点极速版 = type=cron,cronexp="2 */5 3-9 * * *", script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,timeout=300
 
+//企鹅读书获取cookie
+# 企鹅读书cookie = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/user\/init,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js, requires-header=true
+//企鹅读书获取时长cookie
+# 企鹅读书时长cookie = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid?,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js, requires-header=true
+//企鹅读书task
+企鹅读书 = type=cron,cronexp=*/11 * * * *,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js
+
+//qq阅读
+# QQ阅读APPcookie = type=http-request,pattern=^https:\/\/(commontgw6|eventv3)\.reader\.qq\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/QQReadSign.js 
+QQ阅读APP = type=cron,cronexp=0 10 0 * * *,script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/QQReadSign.js
+
 # By Evilbutcher GitHub：https://github.com/evilbutcher/Quantumult_X/tree/master
 NASA每日一图 = type=cron,cronexp="30 7 * * *", script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js,timeout=300
 iDaily每日环球视野 = type=cron,cronexp="2 8 * * *", script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/idaily/idaily.js,timeout=300
@@ -16,6 +27,8 @@ iDaily每日环球视野 = type=cron,cronexp="2 8 * * *", script-path=https://ra
 饿了么-打卡领红包 = type=cron,cronexp="0 9 8 * * *", script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js,timeout=300
 Alipay = type=cron,cronexp="0 25 7 * * *", script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/Alipay/Alipay.js,timeout=300
 滴滴出行 = type=cron,cronexp="0 1,20 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js,timeout=300
+# 滴滴出行APPCookie = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
+# 滴滴出行小程序Cookie = type=http-request,pattern=^https:\/\/common\.diditaxi\.com\.cn\/webapp\/config\/sidebar\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
 # By NobyDa    GitHub：https://github.com/NobyDa/Script/tree/master
 爱奇艺 = type=cron,cronexp="20 0 8 * * *", script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,timeout=300
