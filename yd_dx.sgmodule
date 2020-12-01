@@ -8,7 +8,7 @@
 #Cookie: CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/LN\/uamrandcodelogin\/autoLogin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
 #Cookie: CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/BN\/realFeeQuery\/getRealFee,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
 中国移动-查话费 = type=cron,cronexp=10 12 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.js,wake-system=true
-cron "20 5 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js,tag=中国移动
+中国移动 = type=cron,cronexp=20 5 8 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js
 
 
 # 电信
@@ -19,7 +19,7 @@ cron "20 5 8 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scr
 中国电信套餐 = type=cron,cronexp=11 12 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js,wake-system=true
 
 #http-request ^https:\/\/wapside.189.cn:9001\/api\/exchange\/consume script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js, requires-body=true,tag=电信金豆兑换话费cookie
-cron "0 10 * * *" script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js, tag=电信金豆兑换话费
+电信金豆兑换话费 = type=cron,cronexp=* 0 10 * * *,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js
 
 
 [MITM]
