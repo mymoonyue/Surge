@@ -7,6 +7,8 @@
 ### 临时任务
 
 排行榜 = type=cron,cronexp="0 13 9 * * *", wake-system=1, timeout=600, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js
+# 活动到12.31
+健康抽奖机 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_health.js
 
 ### 固定任务
 
@@ -46,6 +48,13 @@
 东东工厂 = type=cron,cronexp="10 * * * *",wake-system=1,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js,timeout=300
 天天加速 = type=cron, cronexp="0 5 1-23/2 * * *", wake-system=1, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_speed.js, timeout=600
 十元街 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_syj.js
+秒杀红包雨 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ms_redrain.js
+金榜年终奖 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
+领京豆额外奖励 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_bean_home.js
+京东汽车 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_car.js
+京东快递签到 = type=cron,cronexp="12 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_kd.js
+京东代属 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js
+
 
 # By NobyDa    GitHub：https://github.com/NobyDa/Script/tree/master
 京东签到 = type=cron,cronexp="1,5 0 * * *",script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,timeout=300
@@ -67,3 +76,8 @@
 
 # iisams 
 京东特权值 = type=cron,cronexp="5 8 * * *", script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js,timeout=300
+
+
+京喜金牌厂长 = type=cron,cronexp="12 * * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_story.js
+
+京喜财富岛 = type=cron,cronexp="30 23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/MoPoQAQ/Script/main/Me/jx_cfd.js
