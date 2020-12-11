@@ -5,16 +5,11 @@
 
 中青看点极速版 = type=cron,cronexp="2 */5 3-9 * * *", script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,timeout=300
 
-//企鹅读书获取cookie
-# 企鹅读书cookie = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/user\/init,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js, requires-header=true
+//企鹅读书获取更新body
+企鹅读书获取更新body = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/log\/v4\/mqq\/track,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js
 //企鹅读书获取时长cookie
-# 企鹅读书时长cookie = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid?,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js, requires-header=true
-//企鹅读书task
+企鹅读书获取时长cookie = type=http-request,pattern=https:\/\/mqqapi\.reader\.qq\.com\/mqq\/addReadTimeWithBid?,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js//企鹅读书task
 企鹅读书 = type=cron,cronexp=*/11 * * * *,script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.js
-
-//qq阅读
-# QQ阅读APPcookie = type=http-request,pattern=^https:\/\/(commontgw6|eventv3)\.reader\.qq\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/QQReadSign.js 
-QQ阅读APP = type=cron,cronexp=0 10 0 * * *,script-path=https://raw.githubusercontent.com/XidNDD/2020scripts/master/QQReadSign.js
 
 # By Evilbutcher GitHub：https://github.com/evilbutcher/Quantumult_X/tree/master
 NASA每日一图 = type=cron,cronexp="30 7 * * *", script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js,timeout=300
