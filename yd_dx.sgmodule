@@ -1,22 +1,19 @@
 #!name=AAC 中国移动、电信
-#!desc=获取Cookie，各种提醒 For一条小团团
+#!desc=移动电信签到 For一条小团团
 
 [Script]
 
 # 移动
 
-#Cookie: CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/LN\/uamrandcodelogin\/autoLogin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
-#Cookie: CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/BN\/realFeeQuery\/getRealFee,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
+##Cookie: CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/LN\/uamrandcodelogin\/autoLogin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
+##Cookie: CMCC = type=http-request,pattern=^https:\/\/clientaccess.10086.cn\/biz-orange\/BN\/realFeeQuery\/getRealFee,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js,requires-body=true,debug=true
 中国移动-查话费 = type=cron,cronexp=10 12 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.js,wake-system=true
 中国移动 = type=cron,cronexp=20 5 8 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js
 
 
 # 电信
 
-#Cookie: 电信余额提醒 = type=http-request,pattern=^https?:\/\/e\.189\.cn\/store\/user\/balance_new\.do,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/10000.cookie.js
-电信余额提醒 = type=cron,cronexp=10 12 * * *,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/10000.js,wake-system=true
-电信营业厅 = type=cron,cronexp=30 10 12 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.js,wake-system=true
-中国电信套餐 = type=cron,cronexp=11 12 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js,wake-system=true
+##Cookie: 电信余额提醒 = type=http-request,pattern=^https?:\/\/e\.189\.cn\/store\/user\/balance_new\.do,script-path= ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo url script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js
 
 #http-request ^https:\/\/wapside.189.cn:9001\/api\/exchange\/consume script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js, requires-body=true,tag=电信金豆兑换话费cookie
 电信金豆兑换话费 = type=cron,cronexp=0 0 10 * * *,script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/dianx/dianx.js
