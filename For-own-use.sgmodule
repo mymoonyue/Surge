@@ -53,15 +53,13 @@ themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercont
 ##抖音去广告&水印res = type=http-response,pattern=^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
 
 # EmbyUnlocked
-emby-adr-vD.js = type=http-response,requires-body=1,max-size=0,pattern=^https://mb3admin.com/admin/service/registration/validateDevice,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-vD.js
-emby-adr-v.js = type=http-response,requires-body=1,max-size=0,pattern=^https://mb3admin.com/admin/service/registration/validate,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-v.js
-emby-adr-gS.js = type=http-response,requires-body=1,max-size=0,pattern=^https://mb3admin.com/admin/service/registration/getStatus,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-gS.js
-
-# 彩云天气自动更新位置
-## 彩云天气自动更新位置 = type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
+##emby-adr-vD.js = type=http-response,requires-body=1,max-size=0,pattern=^https://mb3admin.com/admin/service/registration/validateDevice,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-vD.js
+##emby-adr-v.js = type=http-response,requires-body=1,max-size=0,pattern=^https://mb3admin.com/admin/service/registration/validate,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-v.js
+##emby-adr-gS.js = type=http-response,requires-body=1,max-size=0,pattern=^https://mb3admin.com/admin/service/registration/getStatus,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-gS.js
+embyPremiere.js = type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/embyPremiere.js
 
 # 微信打不开的链接会进行跳转，包括抖音淘宝等链接甚至可扫描支付宝二维码
 tbopener.js = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
 
 [MITM]
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, ios.prod.ftl.netflix.com, api.m.jd.com, trade-acs.m.taobao.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, *.kuwo.cn, vip1.kuwo.cn, *.amemv.com, mb3admin.com, weather-data.apple.com, api.weather.com, weixin110.qq.com
+hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, ios.prod.ftl.netflix.com, api.m.jd.com, trade-acs.m.taobao.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, *.kuwo.cn, vip1.kuwo.cn, *.amemv.com, mb3admin.com, weixin110.qq.com
