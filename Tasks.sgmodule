@@ -69,3 +69,7 @@ WPS = type=cron,cronexp="30 7 8 * * *", script-path=https://raw.githubuserconten
 
 ##vinewx  https://ooxx.be/js/
 无忧行 = type=cron,cronexp="0 9 * * *", script-path=https://ooxx.be/js/jegotrip.js,timeout=300
+
+
+[MITM]
+hostname = %APPEND% as.xiaojukeji.com, common.diditaxi.com.cn
