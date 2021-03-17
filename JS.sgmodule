@@ -30,7 +30,7 @@ https:\/\/.*.xiaoxiao(img|apps|appxs).com header-replace Cookie xxx_api_auth=613
 [Script]
 
 # ＞彩云天气解锁vip
-http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=https://raw.githubusercontent.com/Maomaoyu0319/ios_rule_script/master/script/caiyun/caiyun_svip.js, requires-body=true, timeout=10
+http-response https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) script-path=https://raw.githubusercontent.com/mymoonyue/QuantumultX/master/Scripts/scripts/caiyun_svip.js, requires-body=true, timeout=10
 
 # > NobyDa整理
 # > 人人视频 去广告
