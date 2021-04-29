@@ -1,5 +1,5 @@
 #!name=AAD 自用脚本
-#!desc=微博去广告、奈飞评分、京东淘宝比价、酷我vip、EmbyUnlocked、微信链接跳转 For一条小团团
+#!desc=微博去广告、奈飞评分、京东淘宝比价、酷我vip、EmbyUnlocked、微信链接跳转、Bilibili自动换区 For一条小团团
 #!system=ios
 
 [Script]
@@ -37,5 +37,8 @@ themekuwo.js = requires-body=1,max-size=0,script-path=https://raw.githubusercont
 # 微信打不开的链接会进行跳转，包括抖音淘宝等链接甚至可扫描支付宝二维码
 tbopener.js = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/HotKids/Rules/master/Script/weixin110.js
 
+# Bilibili港澳台番剧自动切换地区 & 显示豆瓣评分
+Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+
 [MITM]
-hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, ios.prod.ftl.netflix.com, api.m.jd.com, trade-acs.m.taobao.com, *.kuwo.cn, vip1.kuwo.cn, mb3admin.com, weixin110.qq.com
+hostname = %APPEND% api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, ios.prod.ftl.netflix.com, api.m.jd.com, trade-acs.m.taobao.com, *.kuwo.cn, vip1.kuwo.cn, mb3admin.com, weixin110.qq.com, ap?.bilibili.com
