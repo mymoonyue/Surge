@@ -1,20 +1,64 @@
-
+#!name=福利APP破解
+#!desc=修改自IOS黑科技
+#!system=ios
 
 [URL REWRITE]
+#麻豆
+#http://share.mfg8yxoxhw.club/api/open/video/share/default.html?a=47v38u&b=4&t=0exmu
+
+#三更
+^http[s]?:\/\/api.(txt2021|kaqcn).(buzz|com)\/api\/user\/voucher url reject-200
+
+#快撸
+^https:\/\/apki\.(.+)\.me url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MTA5MTA5IiwiaXNzIjoiIiwiaWF0IjoxNjE5NzYzMDkyLCJuYmYiOjE2MTk3NjMwOTIsImV4cCI6MTc3NzQ0MzA5Mn0.aVf3m_oydsIXgZHWX-A5S5U6YWsIPgk-Xoj8UXy9MIw$2
+
+#新春水
+^https:\/\/api\.(sumsun|klettdayeare|kjregister)\.(top|com)\/api\/vip\/newshow url reject-200
+^https:\/\/api\.(sumsun|klettdayeare|kjregister)\.(top|com)\/api\/banner\/show url reject-200
+
+#蜜桃
+^https:\/\/mtapp\.(.+)\.me\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDA5MTY0NyIsImlzcyI6IiIsImlhdCI6MTYxODU4MDc1NSwibmJmIjoxNjE4NTgwNzU1LCJleHAiOjE3NzYyNjA3NTV9.3aRoUmqev-qy2mLGN1ttY0hrBiHsQ8lKHCcAqX9ngBE$2
+
+#91桃色
+^https:\/\/avapp\.calvapi\w\.me\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNzA2NTE0MiIsImlzcyI6IiIsImlhdCI6MTYxODU4NTQ1OSwibmJmIjoxNjE4NTg1NDU5LCJleHAiOjE3NzYyNjU0NTl9.t2q_pRxo1KN676bK77syjJNxOaHmCFK4AVEC0SdohC8$2
+
+#草榴短视频
+^https:\/\/app\.(.+)\.me\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjQ1MzA5NiIsImlzcyI6IiIsImlhdCI6MTYxODU4NTc2OSwibmJmIjoxNjE4NTg1NzY5LCJleHAiOjE3NzYyNjU3Njl9.NvngndWmUawhDMllxDQKEmG1WUwyrkPnasztVOL088o$2
+
+#陌陌视频
+^https:\/\/api\.(bdawnvr|moapi1|moapi)\.(xyz|club|site|online)\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzMzE5MDM0IiwiaXNzIjoiIiwiaWF0IjoxNjE4NTg3NjE4LCJuYmYiOjE2MTg1ODc2MTgsImV4cCI6MTc3NjI2NzYxOH0.hF3I7ONOVWUUu8N3CzH-qXzqbMFJA6QXMshilciWpWk$2
+
+#知音视频
+^https:\/\/(apic|avapp)\.(aoimi\w|clapi\w)\.me\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5MjIzODAzIiwiaXNzIjoiIiwiaWF0IjoxNjE4NjQwMDY3LCJuYmYiOjE2MTg2NDAwNjcsImV4cCI6MTc3NjMyMDA2N30.OA8xpC_bd7epGV5dp-Cr9aNfAiLwCkEKX_qpepcdBZY$2
+
+#丁丁
+^https:\/\/ddapp\.cukeindia\.work\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:0533489780da4e3b3bda6d77a75d63b24ceeb883f9256a1502a247e3e19a54bbb8311867e12d82e387$2
+
+#DJ秀
+^https:\/\/slb\.djshow\.cn\/api\/banzou\/ url response-body "ad_enable":\w+ response-body "ad_enable":false
+
+#91视频
+^https:\/\/(app|api)\.(qdjdswkj|rcljx|qishangzs)\.com url request-header (\r\n)X-AUTH-TOKEN:.+(\r\n) request-header $1X-AUTH-TOKEN:eyJhbGciOiJIUzUxMiIsImlhdCI6MTYyMDA0NjM4NiwiZXhwIjoxOTM1NDA2Mzg2fQ.eyJpZCI6NDEzODUyMzN9.dawHJHgNljN6pzbZysadqv1KPpsnv3cqSNqDN1Bx5eWWx_LdQnPMu6f4uZKfXKfScCLMo4hQlJK6PGBHgJN8Zg$2
+
+#麻豆短视频
+^https:\/\/mda\..+\.site\/api\/operation\/video\/buy url response-body "code":\d+ response-body "code":200
+^https:\/\/mda\..+\.site\/api\/auth\/startupAdv url reject-200
+
+#雪梨
+^https:\/\/app\.pear--app\.com\/api\/app\/.+ url request-header (\r\n)token:.+(\r\n) request-header $1token:521d389499f111ebbf4e82d5981aa92e$2
+
+[Script]
 
 #麻豆解锁VIP无限看测试
 #下载地址：（经常失效放弃更新）
-#http://share.mfg8yxoxhw.club/api/open/video/share/default.html?a=47v38u&b=4&t=0exmu
 #^https:\/\/(2-api|api)\.(yousuilife|md-ddd1|md-ddd2|md-ddd3|md-ddd4)\.com\/api\/web\/.+ url script-request-header https://6678888.xyz/quantumultX/madou.js
 
 #三更解锁VIP无限看
 #下载地址：https://blwtgwe.cn/5858489?tmp=dy&dir=0
-^http[s]?:\/\/api.(txt2021|kaqcn).(buzz|com)\/api\/user\/voucher url reject-200
 ^http[s]?:\/\/api.(txt2021|kaqcn).(buzz|com)\/api\/.+  url script-request-header https://6678888.xyz/quantumultX/sangeng.js
 
 #快撸解锁会员无限看
 #下载地址：https://klicqi.xyz?p=VSG36N
-^https:\/\/apki\.(.+)\.me url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1MTA5MTA5IiwiaXNzIjoiIiwiaWF0IjoxNjE5NzYzMDkyLCJuYmYiOjE2MTk3NjMwOTIsImV4cCI6MTc3NzQ0MzA5Mn0.aVf3m_oydsIXgZHWX-A5S5U6YWsIPgk-Xoj8UXy9MIw$2
 
 #百丽宫解锁VIP
 #下载地址：https://hkj.lanzous.com/ie7zAnexo2b
@@ -55,8 +99,6 @@
 #新春水解锁无限看
 #下载地址：
 #https://tm9ji.com/share?code=7K5W8
-^https:\/\/api\.(sumsun|klettdayeare|kjregister)\.(top|com)\/api\/vip\/newshow url reject-200
-^https:\/\/api\.(sumsun|klettdayeare|kjregister)\.(top|com)\/api\/banner\/show url reject-200
 ^https:\/\/api\.(sumsun|klettdayeare|kjregister)\.(top|com)\/api\/user\/profile\/ url script-response-body https://6678888.xyz/quantumultX/xincs.js
 
 #丝瓜解锁VIP视频无限看
@@ -84,35 +126,28 @@
 #蜜桃解锁VIP无限看
 #下载地址
 #https://mtlebh.xyz?p=Q7HB6L
-^https:\/\/mtapp\.(.+)\.me\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMDA5MTY0NyIsImlzcyI6IiIsImlhdCI6MTYxODU4MDc1NSwibmJmIjoxNjE4NTgwNzU1LCJleHAiOjE3NzYyNjA3NTV9.3aRoUmqev-qy2mLGN1ttY0hrBiHsQ8lKHCcAqX9ngBE$2
 
 #91桃色解锁VIP无限看
 #下载地址
 #https://tsmanu.xyz?p=C4GSB1
-^https:\/\/avapp\.calvapi\w\.me\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxNzA2NTE0MiIsImlzcyI6IiIsImlhdCI6MTYxODU4NTQ1OSwibmJmIjoxNjE4NTg1NDU5LCJleHAiOjE3NzYyNjU0NTl9.t2q_pRxo1KN676bK77syjJNxOaHmCFK4AVEC0SdohC8$2
 
 #草榴短视频解锁VIP无限看
 #下载地址
 #https://sppsge.xyz?p=OG8LDJ
-^https:\/\/app\.(.+)\.me\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjQ1MzA5NiIsImlzcyI6IiIsImlhdCI6MTYxODU4NTc2OSwibmJmIjoxNjE4NTg1NzY5LCJleHAiOjE3NzYyNjU3Njl9.NvngndWmUawhDMllxDQKEmG1WUwyrkPnasztVOL088o$2
 
 #陌陌视频解锁VIP无限看
 #下载地址
 #https://mmxbpr.xyz?p=VOD9J6
-^https:\/\/api\.(bdawnvr|moapi1|moapi)\.(xyz|club|site|online)\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIzMzE5MDM0IiwiaXNzIjoiIiwiaWF0IjoxNjE4NTg3NjE4LCJuYmYiOjE2MTg1ODc2MTgsImV4cCI6MTc3NjI2NzYxOH0.hF3I7ONOVWUUu8N3CzH-qXzqbMFJA6QXMshilciWpWk$2
 
 #知音视频解锁VIP无限看
 #下载地址
 #https://sghoxm.xyz?p=WD44PJ
-^https:\/\/(apic|avapp)\.(aoimi\w|clapi\w)\.me\/api\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI5MjIzODAzIiwiaXNzIjoiIiwiaWF0IjoxNjE4NjQwMDY3LCJuYmYiOjE2MTg2NDAwNjcsImV4cCI6MTc3NjMyMDA2N30.OA8xpC_bd7epGV5dp-Cr9aNfAiLwCkEKX_qpepcdBZY$2
 
 #丁丁解锁VIP无限看
 #下载地址
 #https://dd472dhgs.vsrbxv.online/wsh4689.html?pkg=dd0001&inviteCode=CKWUEL
-^https:\/\/ddapp\.cukeindia\.work\/.+ url request-header (\r\n)Authorization:.+(\r\n) request-header $1Authorization:0533489780da4e3b3bda6d77a75d63b24ceeb883f9256a1502a247e3e19a54bbb8311867e12d82e387$2
 
 #DJ秀商店直接搜索
-^https:\/\/slb\.djshow\.cn\/api\/banzou\/ url response-body "ad_enable":\w+ response-body "ad_enable":false
 
 #葫芦娃解锁VIP无限看
 #葫芦娃下载地址
@@ -130,14 +165,11 @@
 #下载地址
 #https://app.uzlb.xyz/i-SR94P7
 #https://app.1zp8.xyz/i-SR94P7
-^https:\/\/(app|api)\.(qdjdswkj|rcljx|qishangzs)\.com url request-header (\r\n)X-AUTH-TOKEN:.+(\r\n) request-header $1X-AUTH-TOKEN:eyJhbGciOiJIUzUxMiIsImlhdCI6MTYyMDA0NjM4NiwiZXhwIjoxOTM1NDA2Mzg2fQ.eyJpZCI6NDEzODUyMzN9.dawHJHgNljN6pzbZysadqv1KPpsnv3cqSNqDN1Bx5eWWx_LdQnPMu6f4uZKfXKfScCLMo4hQlJK6PGBHgJN8Zg$2
 
 #麻豆短视频解锁会员和付费
 #下载地址无需注册
 #https://mdsv01.com/?pc=5e339d60-7605-4ccc-bfb9-68bf84f784b7
 ^https:\/\/mda\..+\.site\/api\/(auth\/login|mine\/myHome|wallet\/query) url script-response-body https://6678888.xyz/quantumultX/mddsp.js
-^https:\/\/mda\..+\.site\/api\/operation\/video\/buy url response-body "code":\d+ response-body "code":200
-^https:\/\/mda\..+\.site\/api\/auth\/startupAdv url reject-200
 
 #通用订阅解锁
 ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://6678888.xyz/quantumultX/sub.js
@@ -145,8 +177,6 @@
 #雪梨解锁VIP无限看
 #下载地址
 #http://15mjk62.live/?code=Z99CVJ&channel=poster
-^https:\/\/app\.pear--app\.com\/api\/app\/.+ url request-header (\r\n)token:.+(\r\n) request-header $1token:521d389499f111ebbf4e82d5981aa92e$2
-
 
 [MITM]
 
