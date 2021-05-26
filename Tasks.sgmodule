@@ -3,16 +3,13 @@
 
 [Script]
 
-中青看点极速版 = type=cron,cronexp="2 */5 3-7 * * *", script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,timeout=300
-
 ##By zZPigle   GitHub：https://github.com/zZPiglet/Task/tree/master
-饿了么-打卡领红包 = type=cron,cronexp="0 9 8 * * *", script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js,timeout=300
+饿了么-打卡领红包 = type=cron,cronexp="9 8 * * *", script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/elem/elemCheckIn.js,timeout=300
 滴滴出行 = type=cron,cronexp="0 1,20 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 滴滴出行APPCookie = type=http-request,pattern=^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\?,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/DiDi/DiDi_new.js
 
 ##By NobyDa    GitHub：https://github.com/NobyDa/Script/tree/master
-爱奇艺 = type=cron,cronexp="20 0 8 * * *", script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,timeout=300
-##吾爱破解 = type=cron,cronexp="30 0 8 * * *", script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js,timeout=300
+爱奇艺 = type=cron,cronexp="30 8 * * *", script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,timeout=300
 百度贴吧(客户端) = type=cron,cronexp="20 8 * * *", script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js,timeout=300
 
 ##By chavyleung      GitHub：https://github.com/chavyleung/scripts
@@ -21,18 +18,13 @@
 
 ##Peng-YM  https://github.com/Peng-YM/QuanX/tree/master/Tasks
 汇率监控 = type=cron,cronexp="8 9 * * *", script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js,timeout=300
-##彩云天气 = type=cron,cronexp="30 8-22 * * *", script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js,timeout=300
 
 ##Sunert https://github.com/Sunert/Scripts/tree/master/Task
-快手极速版 = type=cron,cronexp="0 11 8 * * *", script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js,timeout=300
-微博&钱包 = type=cron,cronexp="0 11 8 * * *", script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,timeout=300
+快手极速版 = type=cron,cronexp="11 8 * * *", script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/kuaishou.js,timeout=300
+微博&钱包 = type=cron,cronexp="20 8 * * *", script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,timeout=300
 
 ##songyangzz   https://github.com/songyangzz/QuantumultX
-##TestFlight公测监控 = type=cron,cronexp="40 9 1-23/2 * * *", script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/testflight.js,timeout=300
-饿了么 = type=cron,cronexp="0 9 8 * * *", script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,timeout=300
-
-##yichahucha    https://github.com/yichahucha/surge/tree/master
-每日一句+蚂蚁森林收能量 = type=cron,cronexp="11 7 * * *", script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/yichahucha/cron_daily.js,timeout=300
+饿了么 = type=cron,cronexp="9 8 * * *", script-path=https://raw.githubusercontent.com/songyangzz/QuantumultX/master/elem/elemSign.js,timeout=300
 
 ##vinewx  https://ooxx.be/js/
 无忧行 = type=cron,cronexp="0 9 * * *", script-path=https://ooxx.be/js/jegotrip.js,timeout=300
