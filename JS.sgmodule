@@ -209,100 +209,89 @@ http-response ^https:\/\/m\.samh\.xndm\.tech\/userapi\/info\/v1\/getuserinfo req
 
 # > Langkhach越南老哥
 # > all apps monkey
-http-response ^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/monkey.js,tag=all apps monkey
-# > Ulysses
-http-request ^https:\/\/sk\.ulysses\.app\/api\/v1\/user_offers$ script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/cleancacheulysses.js,tag=Ulysses
-http-response ^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/ulysses.js,tag=Ulysses
+http-response ^https:\/\/www\.api\.monkeyuni\.net\/api\/.+\/mobile\/account\/load-update requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/monkey.js,tag=all apps monkey
 # > NOMO
-http-response ^https:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_product_list requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/nomo.js,tag=NOMO
+http-response ^https:\/\/nomo\.dafork\.com\/api\/v2\/iap\/ios_product_list requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/nomo.js,tag=NOMO
 # > Faded
-http-response ^https:\/\/api\.madewithfaded\.com\/api\/.+\/subscription\/validate$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Faded.js,tag=Faded
+http-response ^https:\/\/api\.madewithfaded\.com\/api\/.+\/subscription\/validate$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/faded.js,tag=Faded
 # > playerxtreme
-http-request ^https:\/\/secure\.istreamer\.com\/backend$ script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/remove-nonematch.js,tag=playerxtreme
-http-response ^https:\/\/secure\.istreamer\.com\/backend$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/playerxtreme.js,tag=playerxtreme
+http-request ^https:\/\/secure\.istreamer\.com\/backend$ script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/remove-nonematch.js,tag=playerxtreme
+http-response ^https:\/\/secure\.istreamer\.com\/backend$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/playerxtreme.js,tag=playerxtreme
 # > grammarly
-http-response ^https:\/\/subscription\.grammarly\.com\/api\/v1$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/grammarly.js,tag=grammarly
+http-response ^https:\/\/subscription\.grammarly\.com\/api\/v1$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/grammarly.js,tag=grammarly
 # > splice
-http-response https:\/\/splice\.oracle\.\w+\.com\/devices\/me requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/splice.js,tag=splice
+http-response https:\/\/splice\.oracle\.\w+\.com\/devices\/me requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/splice.js,tag=splice
 # > planner5d
-http-response ^https:\/\/planner5d\.com\/api\/sets requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/planner5d.js,tag=planner5d
+http-response ^https:\/\/planner5d\.com\/api\/sets requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/planner5d.js,tag=planner5d
 # > Dayone
-# 1.启用本脚本与 pre 脚本
-# 2.重启 Day One，稍等片刻等待高级版出现
-# 3.禁用掉 pre 脚本，重启 Day One，确认高级版状况不变
-# pre_dayone
-# http-request ^https:\/\/dayone\.me\/api\/users$ debug=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/dayone-pre.js,tag=Dayone
-http-response ^https:\/\/dayone\.me\/api\/(users|v2\/users\/(account-status|receipt))$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/dayone.surge.js,tag=Dayone
+http-response ^https:\/\/dayone\.me\/api\/(users|v2\/users\/(account-status|receipt))$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/dayone.js,tag=Dayone
 # > endel
-http-response ^https:\/\/api-production\.endel\.io\/.*\/user$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/endel.js,tag=endel
+http-response ^https:\/\/api-production\.endel\.io\/.*\/user$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/endel.js,tag=endel
 # > itranslate
-http-response ^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/itranslate.js,tag=itranslate
+http-response ^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/itranslate.js,tag=itranslate
 # > photoshop
-http-response ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/photoshop.js,tag=photoshop
+http-response ^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/photoshop.js,tag=photoshop
 # > draft
-http-response ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/draft.js,tag=draft
-# > workingcopy.js
-http-response ^https:\/\/education\.github\.com\/api\/user$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/workingcopy.js,tag=workingcopy
+http-response ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/draft.js,tag=draft
 # > speak&translate
-http-response ^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransaction$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/speak&translate.js,tag=speak&translate
+http-response ^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransaction$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/speak%26translate.js,tag=speak&translate
 # > over
-http-response ^https:\/\/api\.overhq\.com\/(user\/token\/refresh$|subscription\/verifyReceipt$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/over.vip.js,tag=over
+http-response ^https:\/\/api\.overhq\.com\/(user\/token\/refresh$|subscription\/verifyReceipt$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/over.js,tag=over
 # > kinemaster
-http-response ^https:\/\/api-kinemaster-assetstore\.(nexstreaming|kinemasters)\.com\/.+\/product\/verifyReceipt$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/kinemaster.js,tag=kinemaster
+http-response ^https:\/\/api-kinemaster-assetstore\.(nexstreaming|kinemasters)\.com\/.+\/product\/verifyReceipt$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/kinemaster.js,tag=kinemaster
 # > musicalm
-http-response ^https:\/\/www\.peacefulsoundsapp\.com\/api\/v1\/init$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/musicalm.js,tag=musicalm
+http-response ^https:\/\/www\.peacefulsoundsapp\.com\/api\/v1\/init$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/musicalm.js,tag=musicalm
 # > lingokids
-http-response ^https:\/\/api\.lingokids\.com\/v1\/renovate_session$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/lingokids.vip.js,tag=lingokids
+http-response ^https:\/\/api\.lingokids\.com\/v1\/renovate_session$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/lingokids.js,tag=lingokids
 # > Bright
-http-response ^https:\/\/engbright\.com\/app-portal\/apple\/receipt$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,tag=Bright
+http-response ^https:\/\/engbright\.com\/app-portal\/apple\/receipt$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/verify_receipt.js,tag=Bright
 # > mojo&noto
-http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/revenuecat.js,tag=mojo&noto
+http-response ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[a-zA-Z0-9_-]*$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/revenuecat.js,tag=mojo&noto
 # > mimo
-http-response ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/mimo.vip.js,tag=mimo
+http-response ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/mimo.js,tag=mimo
 # > boom
-http-response ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,tag=boom
+http-response ^https:\/\/apimboom2\.globaldelight\.net\/itunesreceipt_v2\.php$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/verify_receipt.js,tag=boom
 # > musixmatch
-http-response ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/musixmatch.miao.js,tag=musixmatch
+http-response ^https:\/\/apic\.musixmatch\.com\/ws\/.*\/config\.get requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/musixmatch.js,tag=musixmatch
 # > productive&sleepzy
-http-response ^https:\/\/subs\.platforms\.team\/.+\/apple\/verify$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/productive.js,tag=productive&sleepzy
+http-response ^https:\/\/subs\.platforms\.team\/.+\/apple\/verify$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/productive.js,tag=productive&sleepzy
 # > Pdfexpert
-http-response ^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Pdfexpert.vip.js,tag=Pdfexpert
+http-response ^https:\/\/license\.pdfexpert\.com\/api\/.+\/subscription\/(refresh$|check$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/pdfexpert.js,tag=Pdfexpert
 # > Lightroom
-http-response ^https:\/\/photos\.adobe\.io\/v2\/accounts requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Lightroom.js,tag=Lightroom
+http-response ^https:\/\/photos\.adobe\.io\/v2\/accounts requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/lightroom.js,tag=Lightroom
 # > calm
-http-response ^https:\/\/api\.calm\.com\/(me$|receipt$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/calm.vip.js,tag=calm
+http-response ^https:\/\/api\.calm\.com\/(me$|receipt$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/calm.js,tag=calm
 # > zingtv
-http-response ^https?:\/\/api\.tv\.zing\.vn\/.+/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/zingtvvipv1.js,tag=zingtv
+http-response ^https?:\/\/api\.tv\.zing\.vn\/.+/user requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/zingtv.js,tag=zingtv
 # > camera360
-http-response ^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/camera360.vip.js,tag=camera360
+http-response ^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/camera360.js,tag=camera360
 # > beautyplus
-http-response ^https:\/\/api-intl\.mr\.meitu\.com/.*/subs_offer_elg$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/beautyplusvip.js,tag=beautyplus
+http-response ^https:\/\/api-intl\.mr\.meitu\.com/.*/subs_offer_elg$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/beautyplus.js,tag=beautyplus
 # > elevate
-http-response ^https:\/\/accounts\.elevateapp\.net\/api\/users\?user%5Bauthentication_token requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/elevate.vip.js,tag=elevate
+http-response ^https:\/\/accounts\.elevateapp\.net\/api\/users\?user%5Bauthentication_token requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/elevate.js,tag=elevate
 # > busuu
-http-response ^https:\/\/api\.busuu\.com\/users\/me requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/busuu.vip.js,tag=busuu
+http-response ^https:\/\/api\.busuu\.com\/users\/me requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/busuu.js,tag=busuu
 # > mondly
-http-response ^https:\/\/api\.mondlylanguages\.com\/v1\/ios\/user\/sync$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/mondly.vip.js,tag=mondly
+http-response ^https:\/\/api\.mondlylanguages\.com\/v1\/ios\/user\/sync$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/mondly.js,tag=mondly
 # > drops
-http-response ^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-syncPurchases\/invocations$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/drops.js,tag=drops
+http-response ^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-syncPurchases\/invocations$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/drops.js,tag=drops
 # > elsa
-http-response ^https:\/\/pool\.elsanow\.io\/user\/api\/v1\/purchase$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/elsa-response.js,tag=elsa
+http-response ^https:\/\/pool\.elsanow\.io\/user\/api\/v1\/purchase$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/elsa-response.js,tag=elsa
 # > syn.me
-http-response ^https:\/\/api\.sync\.me\/api\/purchases\/(report_purchases|get_purchases) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/syn.me.js,tag=syn.me
+http-response ^https:\/\/api\.sync\.me\/api\/purchases\/(report_purchases|get_purchases) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/syn.me.js,tag=syn.me
 # > memrise
-http-response ^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards\/following\/) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/memrise.vip.js,tag=memrise
+http-response ^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards\/following\/) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/memrise.js,tag=memrise
 # > nhaccuatui
-http-response ^https:\/\/graph\.nhaccuatui\.com\/.*\/users\/info requires-body=1,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/nhaccuatui.js,tag=nhaccuatui
+http-response ^https:\/\/graph\.nhaccuatui\.com\/.*\/users\/info requires-body=1,max-size=0,debug=1,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/nhaccuatui.js,tag=nhaccuatui
 # > Unfold
-http-response ^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Unfold.vip.js,tag=Unfold
+http-response ^https:\/\/api\.unfold\.app\/v1\/ios\/receipts$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/unfold.js,tag=Unfold
 # > videoshow
-http-response ^https:\/\/owa\.videoshowiosglobalserver\.com\/zone\/.+\/iosPayClient\/(payVerify|imeiVerify) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/videoshow.vip.js,tag=videoshow
+http-response ^https:\/\/owa\.videoshowiosglobalserver\.com\/zone\/.+\/iosPayClient\/(payVerify|imeiVerify) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/videoshow.js,tag=videoshow
 # > BuyHack
-http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/verify_receipt.js,tag=BuyHack
+http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ requires-body=1,max-size=262144,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/verify_receipt.js,tag=BuyHack
 # > zingmp3
-http-response ^https:\/\/api\.global\.mp3\.zing\.vn\/.+\/getUserInfo\?data= requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/zingmp3.js,tag=zingmp3
-http-response ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getDownloadSongInfo\?data requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/zingmp3.downloadsong.js,tag=zingmp3
-http-response ^https:\/\/api\.global\.mp3\.zing\.vn\/1\.0\/getSongInfo\?data requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/zingmp3.getsong.js,tag=zingmp3
+http-response ^https:\/\/api\.global\.mp3\.zing\.vn\/.+\/getUserInfo\?data= requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/zingmp3.js,tag=zingmp3
+
 
 # > 公众号墨鱼手记    https://github.com/ddgksf2013
 http-response ^http:\/\/duoting\.tatatimes\.com\/tataeraapi\/api\.s\?h=QueryVipUser url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/englishread.js,tag=英语阅读
