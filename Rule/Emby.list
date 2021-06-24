@@ -4,6 +4,8 @@
 DOMAIN-SUFFIX,plusmedia.site
 #佩奇影业（普拉斯）
 DOMAIN,emby.nexitally.com
+#Imm（普拉斯）
+DOMAIN,emby.immtel.com
 #彩虹猫（普拉斯）
 DOMAIN,servers.xeton.dev
 #终点站 https://t.me/EmbyPublic
