@@ -52,8 +52,6 @@ http-response ^https?:\/\/api\.vnision\.com\/v1\/(users\/|banners) requires-body
 http-response “^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$” requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/91.js,tag=91短视频
 # > 香蕉视频VIP
 http-response ^https?:\/\/.*\.(lago|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js,tag=香蕉视频VIP
-# > 用药助手解锁专业版 (By Primovist)
-http-response ^https?:\/\/(i|newdrugs)\.dxy\.cn\/(snsapi\/username\/|app\/user\/(pro\/stat\?|init\?timestamp=)) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/yyzs.js,tag=用药助手解锁专业版
 # > 陆琪讲故事
 http-response ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/luqi.js,tag=陆琪讲故事
 # > WPS (By eHpo)
