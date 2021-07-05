@@ -43,8 +43,5 @@ tbopener.js = type=http-response,pattern=^https?:\/\/weixin110\.qq\.com\/cgi-bin
 Bili Region = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
 Bili Search = type=http-request,pattern=^https:\/\/app\.bilibili\.com\/x\/v2\/search\/type\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
 
-## 哔哩哔哩番剧开启1080P+
-Bili 1080P+ = type=http-response,pattern=^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js
-
 [MITM]
 hostname = %APPEND% api.weibo.cn,mapi.weibo.com,*.uve.weibo.com, mp.weixin.qq.com, ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com, api.m.jd.com, trade-acs.m.taobao.com, *.kuwo.cn,vip1.kuwo.cn, weixin110.qq.com, ap?.bilibili.com,api.bilibili.com,app.bilibili.com
