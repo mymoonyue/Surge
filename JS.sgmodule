@@ -42,8 +42,6 @@ http-response ^https:\/\/.*\/getGlobalData requires-body=1,max-size=0,script-pat
 http-response ^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/aimeiju.js,tag=爱美剧VIP
 # > 网易蜗牛读书VIP (By yxiaocai and JO2EY)
 http-response ^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js,tag=网易蜗牛读书VIP
-# > 看漫画极速版vip (By HoGer)
-http-response ^https?:\/\/getuserinfo\.321mh\.com\/app_api\/v5\/getuserinfo\/ requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/kmh.js,tag=看漫画极速版vip
 # > 知音漫客VIP (By mieqq)
 http-response ^https://getuserinfo-globalapi.zymk.cn/app_api/v5/(getuserinfo|coin_account|getuserinfo_ticket|getcomicinfo)/ requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Zymh.js,tag=知音漫客VIP
 # > VSCO滤镜VIP
@@ -62,8 +60,6 @@ http-response ^https:\/\/www\.luqijianggushi\.com\/api\/v2\/user\/get requires-b
 http-response ^https://account.wps.*/api/users/ requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js,tag=WPS
 # > Gyroscope 解锁 pro (By Maasea)
 http-response ^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/gyroscope.js,tag=Gyroscope 解锁 pro
-# > 大千视界
-http-response ^https:\/\/api\.mvmtv\.com\/index\.php.*(c=user.*a=info|a=addr.*vid=.*) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/dqsj.js,tag=大千视界
 # > JibJab解锁pro
 http-response ^https:\/\/origin-prod-phoenix\.jibjab\.com\/v1\/user requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/jibjab.js,tag=JibJab解锁pro
 # > Termius 解锁本地pro  (By Maasea)
@@ -80,9 +76,6 @@ http-response ^https?:\/\/mp\.bybutter\.com\/mood\/(official-templates|privilege
 http-response ^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/PicsArt.js,tag=PicsArt美易 pro
 # > Splice 视频编辑器 pro
 http-response ^https:\/\/splice\.oracle\.\w+\.com\/devices\/me requires-body=1,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/NobyDa/Surge/JS/Splice.js,tag=Splice 视频编辑器 pro
-# > 动画疯 去广告
-# http-request ^https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,tag=动画疯 去广告
-# http-response ^https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,tag=动画疯 去广告
 
 # > superuv
 # > 驾校一点通 (by @superuv)
