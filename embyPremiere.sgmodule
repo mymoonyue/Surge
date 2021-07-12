@@ -1,8 +1,0 @@
-#!name=EmbyPremiere
-#!desc=EmbyPremiereUnlock
-
-[Script]
-EmbyPremiere.js = type=http-response,pattern= ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/mymoonyue/QuantumultX/master/Scripts/scripts/emby.js
-
-[MITM]
-hostname = %APPEND% mb3admin.com
