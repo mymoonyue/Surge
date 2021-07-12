@@ -1,8 +1,8 @@
-#!name=embyPremiere
-#!desc=embyPremiereUnlock
+#!name=EmbyPremiere
+#!desc=EmbyPremiereUnlock
 
 [Script]
-unlock_emby = type=http-response,script-path=https://cdn.jsdelivr.net/gh/YukiCoco/YukiUsefulTools@YukiCoco-patch-1/unlock_emby.js,pattern=^http(s?):\/\/(www\.|)mb3admin\.com\/.*$,max-size=131072,requires-body=true,timeout=10,debug=false,enable=true
+unlock_emby = type=http-response,pattern=^http(s?):\/\/(www\.|)mb3admin\.com\/.*$,script-path=https://cdn.jsdelivr.net/gh/YukiCoco/YukiUsefulTools@YukiCoco-patch-1/unlock_emby.js,max-size=131072,requires-body=true,timeout=10,debug=false,enable=true
 
 [MITM]
 hostname = %APPEND% mb3admin.com,www.mb3admin.com
