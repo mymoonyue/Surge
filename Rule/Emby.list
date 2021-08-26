@@ -20,5 +20,5 @@ DOMAIN,emby.immtel.com
 #彩虹猫（普拉斯）
 DOMAIN,emby.nyancat.net
 DOMAIN,servers.xeton.dev
-#猫熊影业
-DOMAIN,embyclub.com
+#猫熊影业+Pornemby猫熊服
+DOMAIN-SUFFIX,embyclub.com
