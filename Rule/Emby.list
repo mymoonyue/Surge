@@ -9,9 +9,6 @@ DOMAIN-SUFFIX,emby.wtf
 DOMAIN-SUFFIX,odysseyplus.site
 #卷毛鼠 https://t.me/CurlyMouse
 DOMAIN-SUFFIX,jmsooo.com
-#OtakuDrive https://t.me/otakudrive
-DOMAIN,emby.neko.edu.rs
-DOMAIN,emby.ok.edu.hk
 ##部分机场服##
 #佩奇影业（普拉斯）
 DOMAIN,emby.nexitally.com
@@ -20,5 +17,5 @@ DOMAIN,emby.immtel.com
 #彩虹猫（普拉斯）
 DOMAIN,emby.nyancat.net
 DOMAIN,servers.xeton.dev
-#猫熊影业+Pornemby猫熊服
-DOMAIN-SUFFIX,embyclub.com
+#Pornemby猫熊服
+DOMAIN,pornemby.ssltd.xyz
