@@ -12,9 +12,13 @@ DOMAIN-SUFFIX,hdchina.org
 DOMAIN-SUFFIX,totheglory.im
 #家园
 DOMAIN-SUFFIX,hdhome.org
-#猫
+#猫站
 DOMAIN-SUFFIX,pterclub.com
+#高清杜比
+DOMAIN-SUFFIX,hddolby.com
 #pttime
 DOMAIN-SUFFIX,pttime.org
+
+
 #RARBG（bt）
 DOMAIN-SUFFIX,rarbg.to
