@@ -1,25 +1,64 @@
-#部分pt站官网
+###部分自用PT站官网###
 
-#馒头
+##十大##
+# 馒头
 DOMAIN-SUFFIX,m-team.cc
-#彩虹岛
+# 彩虹岛
 DOMAIN-SUFFIX,chdbits.co
-#高清天空
+# 高清天空
 DOMAIN-SUFFIX,hdsky.me
-#我堡
+# 我堡
 DOMAIN-SUFFIX,ourbits.club
-#瓷器
+# 瓷器
 DOMAIN-SUFFIX,hdchina.org
-#套套哥
+# 套套哥
 DOMAIN-SUFFIX,totheglory.im
-#家园
-DOMAIN-SUFFIX,hdhome.org
-#猫站
+# 猫站
 DOMAIN-SUFFIX,pterclub.com
-#高清杜比
-DOMAIN-SUFFIX,hddolby.com
-#pttime
-DOMAIN-SUFFIX,pttime.org
+# 不可说
+#
+# 朋友
+DOMAIN-SUFFIX,keepfrds.com
+# 家园
+DOMAIN-SUFFIX,hdhome.org
 
-#RARBG（bt）
+##教育##
+#北洋园
+DOMAIN-SUFFIX,tjupt.org
+
+##其他##
+# 柠檬
+DOMAIN-SUFFIX,lemonhd.org
+# 观众
+DOMAIN-SUFFIX,audiences.me
+# U2(pt)&动漫花园(bt)
+DOMAIN-SUFFIX,dmhy.org
+# 高清杜比
+DOMAIN-SUFFIX,hddolby.com
+# 铃音
+DOMAIN-SUFFIX,soulvoice.club
+# 老师
+DOMAIN-SUFFIX,nicept.net
+# 白兔
+DOMAIN-SUFFIX,hares.top
+# 龙之家
+DOMAIN-SUFFIX,dragonhd.xyz
+# Pt时间
+DOMAIN-SUFFIX,pttime.org
+# 铂金家
+DOMAIN-SUFFIX,pthome.net
+
+##外站##
+# PTP
+#DOMAIN-SUFFIX,passthepopcorn.me
+# HDB
+#DOMAIN-SUFFIX,hdbits.org
+# BDN
+#DOMAIN-SUFFIX,broadcasthe.net
+# IPT
+#DOMAIN-SUFFIX,iptorrents.com
+
+
+##BT##
+# RARBG
 DOMAIN-SUFFIX,rarbg.to
