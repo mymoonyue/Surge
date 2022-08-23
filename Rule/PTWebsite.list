@@ -23,8 +23,10 @@ DOMAIN-SUFFIX,keepfrds.com
 DOMAIN-SUFFIX,hdhome.org
 
 ##教育##
-#北洋园
+# 北洋园
 DOMAIN-SUFFIX,tjupt.org
+# 南阳
+DOMAIN-SUFFIX,nanyangpt.com
 
 ##其他##
 # 柠檬
@@ -47,6 +49,8 @@ DOMAIN-SUFFIX,dragonhd.xyz
 DOMAIN-SUFFIX,pttime.org
 # 铂金家
 DOMAIN-SUFFIX,pthome.net
+# 高清时间
+DOMAIN-SUFFIX,hdtime.org
 
 ##外站##
 # PTP
