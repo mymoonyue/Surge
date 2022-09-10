@@ -1,4 +1,4 @@
-###部分自用PT站官网###
+###部分自用PT站官网，防被墙###
 
 ##十大##
 # 馒头
@@ -16,7 +16,7 @@ DOMAIN-SUFFIX,totheglory.im
 # 猫站
 DOMAIN-SUFFIX,pterclub.com
 # 不可说
-#
+DOMAIN-SUFFIX,springsunday.net
 # 朋友
 DOMAIN-SUFFIX,keepfrds.com
 # 家园
