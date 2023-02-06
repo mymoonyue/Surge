@@ -1,0 +1,22 @@
+#!name=Fileball挂载网盘
+#!desc=使用方法见备注
+
+
+[General]
+
+force-http-engine-hosts = %APPEND% aliyun.example.com:0, quark.example.com:0, pikpak.example.com:0
+
+
+[Script]
+
+阿里云盘 = type=http-request,pattern=^http:\/\/aliyun\.example\.com,requires-body=1,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/ali.js,max-size=0,debug=0
+#使用方法：添加Synoogy协议，账号随便填，密码填cookie。阿里云Token获取地址(需要用阿里云盘扫描alist的二维码获得)[ https://alist-doc.nn.ci/docs/driver/aliyundrive ]
+#Fileball挂载图标：https://raw.githubusercontent.com/githubdulong/Script/master/Images/Fileball.json
+
+夸克网盘 = type=http-request,pattern=^http:\/\/quark\.example\.com,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/quark.js,debug=0
+#使用方法：夸克登录网页版抓包，路径https://drive.quark.cn/1/clouddrive/file
+#Fileball挂载图标：https://raw.githubusercontent.com/githubdulong/Script/master/Images/Fileball.json
+
+pikpak = type=http-request,pattern=^http:\/\/pikpak\.example\.com,requires-body=1,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/pikpak.js,max-size=0,debug=0
+#使用方法：直接填pikpak账号密码
+#Fileball挂载图标：https://raw.githubusercontent.com/githubdulong/Script/master/Images/Fileball.json
